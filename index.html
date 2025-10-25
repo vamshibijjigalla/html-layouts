@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <div class="site-logo">
+        <a href="/">
+            <!-- fixed img attributes: remove height=0 and close attributes correctly -->
+            <img src="assets/logo.jpg" alt="Site logo" width="60" />
+        </a>
+    </div>
+    
+    <style>
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        padding: 0 12px;
+    }
+    
+    body{
+        margin: 0;
+    }
+
+        body{
+            margin: 0;
+            min-height: 2500px; /* full page height requested */
+            background-color:lightblue; /* main page background */
+        }
+
+    .site-logo img{
+        display: block;
+        height: 44px; 
+        width: auto;
+    }
+    
+    header nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+   
+    header nav ul li{
+        float: none !important;
+    }
+    
+    header nav a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+    }
+    header nav a:hover{
+        background: rgba(255,255,255,0.06);
+        border-radius: 4px;
+    }
+    </style> 
+    <nav>
+        <ul style="list-style-type:none; margin:0; padding:0; overflow:hidden;">
+            <li style="float:left;"><a href="#" style="display:block; color:white; text-align:center; padding:14px 16px; text-decoration:none;">Home</a></li>
+            <li style="float:left;"><a href="#" style="display:block; color:white; text-align:center; padding:14px 16px; text-decoration:none;">About</a></li>
+            <li style="float:left;"><a href="#" style="display:block; color:white; text-align:center; padding:14px 16px; text-decoration:none;">Services</a></li>
+            <li style="float:left;"><a href="#" style="display:block; color:white; text-align:center; padding:14px 16px; text-decoration:none;">Contact</a></li>
+        </ul>
+
+    </nav>
+     </header>
+</head>
+    
+</body>
+</html>
