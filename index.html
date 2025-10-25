@@ -18,7 +18,7 @@
     header{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         height: 50px;
         width: 100%;
         background-color: black;
@@ -28,7 +28,7 @@
         font-size: 24px;
         text-align: center;
         margin-top: 20px;
-        background-color: 211, 211, 211; /* light gray background for main content */
+        background-color: 211, 211, 211; 
     }
     
     body{
@@ -45,6 +45,8 @@
         display: block;
         height: 44px; 
         width: auto;
+        align-self: first baseline;
+        align-items: start;
     }
     
     header nav ul{
@@ -71,6 +73,38 @@
         background: rgba(255,255,255,0.06);
         border-radius: 4px;
     }
+    /* Footer styles */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-content {
+        display: flex;
+        gap: 40px;
+    }
+    .footer-section {
+        flex: 1;
+    }
+    .footer-section h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .footer-section p, .footer-section a {
+        margin: 5px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
     </style> 
     <nav>
         <ul style="list-style-type:none; margin:0; padding:0; overflow:hidden;">
@@ -86,7 +120,31 @@
     <div>
         <img src ="assets/form image 1.jpg" alt="About Us Image" width="300" />
     </div></main>
+    
 </head>
     
 </body>
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: vbijjigalla@gmail.com</p>
+            <p>Phone: 91+ 9502103487</p>
+            <p>Address: 123 Street Name, hyderabad</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Services</a></p>
+            <p><a href="#">Contact</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="https://www.instagram.com/vamshiofficial_?igsh=MWY4Y3RtbmdxNzN4bQ==">Instagram</a></p>
+        </div>
+    </div>
+</footer>
 </html>
